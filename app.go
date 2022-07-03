@@ -8,5 +8,6 @@ import (
 func main() {
 	router := gin.Default()
 	router.GET("/check-connection", CheckHandler)
+	router.POST("/register", RegisterHandler)
 	router.Run("localhost:8080")
 }
